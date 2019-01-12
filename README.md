@@ -1,21 +1,17 @@
-# Tomboy2Evernote
-Exports Tomboy Notes to Evernote Format
-
-![Tomboy](docs/tomboy.png "Tomboy")
+# Taskwarrior2Evernote
+Exports Task Warrior Tasks to Evernote Format
 
 ![Evernote](docs/evernote.png "Evernote")
-
+# Export Task Warrior tasks
+```bash
+task 1-100 export rc.json.array:on > tasks.json
+```
 # Usage
 ```bash
-python Tomboy2Evernote.py -i ~/.local/share/tomboy -o ~/Desktop
+python Taskwarrior2Evernote.py -i tasks.json -o ~/Notes
 ```
 
 # Info
 ## Tested with:
- - Python 2.7
- - Ubuntu 14.04
- 
-## Why this tool?
-Although Tomboy has a great export to html functionality there are two issues with this
- - It fails sometimes: https://bugs.launchpad.net/ubuntu/+source/tomboy/+bug/983998
- - The exported html layout is not fully accepted by Evernote hence Tomboy's formatting looks broken there
+ - Python 3.7
+ - Archlinux
