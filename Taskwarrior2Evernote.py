@@ -11,7 +11,6 @@ import json
 def process_files(inputfile, outputdir):
     enex_notes = []
     output_filename = 'json2Evernote.enex'
-    note_body = open(inputfile, 'r').read()
     with open(inputfile) as f:
         data = json.load(f)
         for entry in data:
